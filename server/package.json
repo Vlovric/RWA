@@ -1,0 +1,21 @@
+{
+	"name": "zadaca_1",
+	"version": "1.0.0",
+	"description": "",
+	"main": "servertest.mjs",
+	"scripts": {
+		"pripremi": "npm link --save jsonwebtoken express sqlite3 express-session cookie-parser base32-encoding",
+		"start": "npm run pripremi && node server.mjs vlovric21_conf.csv",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Viktor Lovrić",
+	"license": "ISC",
+	"dependencies": {
+		"base32-encoding": "file:../../../../../usr/lib/node_modules/base32-encoding",
+		"cookie-parser": "file:../../../../../usr/lib/node_modules/cookie-parser",
+		"express": "file:../../../../../usr/lib/node_modules/express",
+		"express-session": "file:../../../../../usr/lib/node_modules/express-session",
+		"jsonwebtoken": "file:../../../../../usr/lib/node_modules/jsonwebtoken",
+		"sqlite3": "file:../../../../../usr/lib/node_modules/sqlite3"
+	}
+}

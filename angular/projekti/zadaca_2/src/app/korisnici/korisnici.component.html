@@ -1,0 +1,26 @@
+<table id="korisniciTable">
+  <thead>
+    <tr>
+      <th>Ime</th>
+      <th>Prezime</th>
+      <th>Email</th>
+      <th>Korime</th>
+      <th>ID Uloga</th>
+    </tr>
+  </thead>
+  <tbody id="korisniciBody">
+    <tr *ngFor="let korisnik of korisnici">
+      <td>{{ korisnik.ime }}</td>
+      <td>{{ korisnik.prezime }}</td>
+      <td>{{ korisnik.email }}</td>
+      <td>{{ korisnik.korime }}</td>
+      <td>{{ korisnik.idUloga }}</td>
+    </tr>
+  </tbody>
+</table>
+<form (ngSubmit)="deleteKorisnik()">
+  <label for="korime">Korisničko ime</label>
+  <input type="text" name="korime" id="korime" [(ngModel)]="korimeToDelete">
+  <br>
+  <input type="submit" value="Obriši">
+</form>

@@ -1,0 +1,48 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+      label {
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+  
+      input {
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 250px;
+        transition: border-color 0.3s;
+  
+        &:focus {
+          outline: none;
+          border-color: #007bff;
+        }
+      }
+  
+      input[type='submit'] {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+  
+        &:hover {
+          background-color: #0056b3;
+        }
+      }
+      #poruka{
+        color: red;
+      }
+    }
+}

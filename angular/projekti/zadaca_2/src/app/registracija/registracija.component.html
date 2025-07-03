@@ -1,0 +1,24 @@
+<main>
+  <form (ngSubmit)="onSubmit()">
+    <label for="ime">Ime</label>
+    <input type="text" name="ime" id="imekorisnika" [(ngModel)]="ime" required>
+    <br>
+    <label for="prezime">Prezime</label>
+    <input type="text" name="prezime" id="prezime" [(ngModel)]="prezime" required>
+    <br>
+    <label for="lozinka">Lozinka</label>
+    <input type="password" name="lozinka" id="lozinka" [(ngModel)]="lozinka" required>
+    <br>
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" [(ngModel)]="email" required>
+    <br>
+    <label for="korime">Korisničko ime</label>
+    <input type="text" name="korime" id="korime" [(ngModel)]="korime" required>
+    <br>
+    <label for="uloga">Uloga</label>
+    <input type="text" name="uloga" id="uloga" [(ngModel)]="uloga" required>
+    <br>
+    <input type="submit" value="Registriraj">
+    <p *ngIf="errorMessage" id="poruka">{{ errorMessage }}</p>
+  </form>
+</main>

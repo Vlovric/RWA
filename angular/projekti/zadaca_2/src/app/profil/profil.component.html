@@ -1,0 +1,41 @@
+<table id="korisnikTable">
+  <thead>
+    <tr>
+      <th>Ime</th>
+      <th>Prezime</th>
+      <th>Email</th>
+      <th>Korime</th>
+      <th>ID Uloga</th>
+    </tr>
+  </thead>
+  <tbody *ngIf="logiraniKorisnik">
+    <tr>
+      <td>{{ logiraniKorisnik.ime }}</td>
+      <td>{{ logiraniKorisnik.prezime }}</td>
+      <td>{{ logiraniKorisnik.email }}</td>
+      <td>{{ logiraniKorisnik.korime }}</td>
+      <td>{{ logiraniKorisnik.idUloga }}</td>
+    </tr>
+  </tbody>
+</table>
+<form *ngIf="logiraniKorisnik" (submit)="onSubmitUpdate()">
+  <label for="ime">Ime</label>
+  <input type="text" name="ime" id="imekorisnika" [(ngModel)]="imeFieldValue">
+  <br>
+  <label for="prezime">Prezime</label>
+  <input type="text" name="prezime" id="prezime" [(ngModel)]="prezimeFieldValue">
+  <br>
+  <label for="lozinka">Lozinka</label>
+  <input type="password" name="lozinka" id="lozinka" [(ngModel)]="lozinkaFieldValue">
+  <label class="labelMessage">Napomena: popunite sva polja sa novim/starim informacijama!</label>
+  <br>
+  <input type="submit" value="Ažuriraj">
+</form>
+
+<form (submit)="iskljuci2FA()">
+  <label id="labelStatus">Status 2FA je: </label>
+  <label id="labelKljuc">{{kljucUkljucen}}</label>
+  <button type="button" (click)="ukljuci2FA()">Uključi</button>
+  <input type="submit" value="Isključi">
+  <label class="labelMessage">{{customMessage}}</label>
+</form>

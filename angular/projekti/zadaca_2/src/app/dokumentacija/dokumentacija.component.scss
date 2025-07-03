@@ -1,0 +1,60 @@
+#mojaSlika {
+    width: 15%;
+    height: 15%;
+  }
+  
+  span {
+    color: blue;
+  }
+  
+  #ERA {
+    width: 20%;
+    height: 20%;
+  }
+  
+  td:empty {
+    background-color: rgb(175, 175, 243);
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px auto;
+  
+    th {
+      background-color: #f2f2f2;
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+  
+      &:first-child {
+        border-top-left-radius: 8px;
+      }
+  
+      &:last-child {
+        border-top-right-radius: 8px;
+      }
+    }
+  
+    td {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+  
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+  
+    tr {
+      border-bottom: 2px solid #afabab;
+  
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+#opcionalno{
+  background-color: rgba(64, 64, 236, 0.692);
+}
+  

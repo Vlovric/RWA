@@ -1,0 +1,248 @@
+
+<main>
+    <img id="mojaSlika" src="../../assets/slikaViktor.png" alt="Moja slika">
+    <h2>Ime i prezime: <span>Viktor Lovrić</span></h2>
+    <h2>FOI e-mail: <span>vlovric21&#64;student.foi.hr</span></h2>
+    <a href="../../assets/VLERA.png"><img id="ERA" src="../../assets/VLERA.png" alt="Slika ERA dijagrama"></a>
+    <h3>Obojane čelije u tablici označavaju da funkcionalnost nije implementirana:</h3>
+    <table>
+        <caption>Tablica 2</caption>
+        <thead>
+            <tr>
+                <th scope="col">Resurs</th>
+                <th scope="col">GET</th>
+                <th scope="col">POST</th>
+                <th scope="col">PUT</th>
+                <th scope="col">DELETE</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>baza/korisnici</td>
+                <td>Napravljeno bez provjere admina</td>
+                <td>Napravljeno bez provjere admina</td>
+                <td>Napravljeno</td>
+                <td>Napravljeno</td>
+            </tr>
+            <tr>
+                <td>baza/korisnici/&#123;korime&#125;</td>
+                <td>Napravljeno</td>
+                <td>Napravljeno</td>
+                <td>Napravljeno</td>
+                <td>Napravljeno bez provjere admina</td>
+            </tr>
+            <tr>
+                <td>baza/korisnici/&#123;korime&#125;/prijava</td>
+                <td></td>
+                <td>Napravljeno</td>
+                <td>Napravljeno</td>
+                <td>Napravljeno</td>
+            </tr>
+            <tr>
+                <td>baza/favoriti</td>
+                <td>Napravljeno</td>
+                <td></td>
+                <td>Napravljeno</td>
+                <td>Napravljeno</td>
+            </tr>
+            <tr>
+                <td>baza/favoriti/&#123;id&#125;</td>
+                <td>Napravljeno</td>
+                <td>Napravljeno</td>
+                <td>Napravljeno</td>
+                <td>Napravljeno</td>
+            </tr>
+            <tr>
+                <td>baza/dnevnik
+                    ?stranica=broj
+                    &amp;sortiraj=&#91;d &#124; m&#93;<br>
+                    &#91;&amp;datumOd=datum&#93;
+                    &#91;&amp;datumDo=datum&#93;<br>
+                    &#91;&amp;vrijemeOd=vrijeme&#93;
+                    &#91;&amp;vrijemeDo=vrijeme&#93;</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <table>
+        <caption>Tablica 3</caption>
+        <thead>
+            <tr>
+                <th scope="col">Uloga</th>
+                <th scope="col">Stranica/e</th>
+                <th scope="col">Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Gost</td>
+                <td>Početna</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Gost/Korisnik</td>
+                <td>SerijaDetalji</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Gost</td>
+                <td>Dokumentacija</td>
+                <td>Napravljeno</td>
+            </tr>
+            <tr>
+                <td>Gost</td>
+                <td>Prijava, Odjava</td>
+                <td>Napravljeno</td>
+            </tr>
+            <tr>
+                <td>Korisnik</td>
+                <td>Profil</td>
+                <td>Napravljeno</td>
+            </tr>
+            <tr>
+                <td>Korisnik</td>
+                <td>Favoriti</td>
+                <td>Napravljeno bez pregleda detalja nakon klika</td>
+            </tr>
+            <tr>
+                <td>Korisnik</td>
+                <td>FavoritDetalji</td>
+                <td>Napravljeno bez prikazivanja slike jer radim sa mock podatcima. Također nije zasebna stranica već
+                    nova tablica na stranici Favoriti
+                </td>
+            </tr>
+            <tr>
+                <td>Admin</td>
+                <td>Registracija</td>
+                <td>Napravljeno bez slanja e-maila</td>
+            </tr>
+            <tr>
+                <td>Admin</td>
+                <td>Korisnici</td>
+                <td>Napravljeno</td>
+            </tr>
+            <tr>
+                <td>Admin</td>
+                <td>Dnevnik</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table>
+        <caption>Tablica Zadaća 2</caption>
+        <thead>
+            <tr>
+                <th scope="col">Zadatak</th>
+                <th scope="col">Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1. Na stranicu dokumentacija ažurirati tablice iz prve zadaće oko informacija koji dijelovi su
+                    napravljeni za servis odnosno aplikaciju. Ako je nešto napravljeno dijelomično treba to jasno
+                    napisati koji dio je napravljen.</td>
+                <td>Napravljeno</td>
+            </tr>
+            <tr>
+                <td>2. Na stranicu dokumentacija kreirati tablicu po koracima (počevši od zadaci općenito) ovog
+                    dokumenta u kojoj jasno pišu elementi opisa 2 zadaće koji su napravljeni, koji nisu.</td>
+                <td>Napravljeno</td>
+            </tr>
+            <tr>
+                <td>3. Složite package.json tako da se sa npm start može pokrenuti server i isto tako jedan
+                    package.json, tsconfig.json i angular.json da se može pokrenuti angular projekt.</td>
+                <td>Napravljeno</td>
+            </tr>
+            <tr>
+                <td>4. Kod predavanja zadaće izbrisati svoje ključeve za TMDB servis iz konfiguracijske datoteke svaki
+                    student ubacuje svoje ključeve u konfiguracijsku datoteku kod testiranja.</td>
+                <td>Napravljeno</td>
+            </tr>
+            <tr>
+                <td>5. Klientski dio Web Aplikacije HTML, CSS i JS na strani klijenta prebaciti u Angular sa
+                    TypeScript-om.</td>
+                <td>Napravljeno</td>
+            </tr>
+            <tr>
+                <td>6. Pozadinski dio web aplikacije poslužuje kompajliranu verziju Angular aplikacije. Moguće je
+                    pokretanje Angular aplikacije preko live servera sa ng serve, ali ta varijanta nosi manje bodova.</td>
+                <td>Napravljeno, poslužuje kompajliranu verziju</td>
+            </tr>
+            <tr>
+                <td>7. Pozadinski dio web aplikacije poslužuje dokumentaciju - moguće je dokumentaciju ugraditi u
+                    samu angular aplikaciju.</td>
+                <td>Napravljeno, dokumentacija ugrađena u samu angular aplikaciju</td>
+            </tr>
+            <tr>
+                <td>8. Pozadinski dio web aplikacije nudi podršku u obliku REST servisa. REST servis sadrži sve
+                    metode kako je to bilo u prvoj zadaći za rad s bazom podataka. Dodatno svi ostali pozadinski
+                    dijelovi prve zadaće (npr. komunikacija sa TMDB servisom) koji nemaju direktne veze s bazom
+                    se sada tretiraju kao proširenje REST servisa jer klijentski dio aplikacije sada mora slati sve preko
+                    fetch zahtjeva. Angular aplikacija nikad ne komunicira direktno sa TMDB servisom već preko
+                    pozadinskog dijela kao u prvoj zadaći.</td>
+                <td>Napravljeno, nema komunikacije sa TMDB servisom</td>
+            </tr>
+            <tr>
+                <td>9. Sada svi pozadinski dijelovi osim inicialnog posluživanja Angular aplikacije i prijave traže
+                    validan JWT.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>10. Informacije o bazičnoj adresi i portu za pozadinski dio koji koristi Angular aplikacija kod slanja
+                    fetch zahtjeva čitaju se iz environment datoteke. Hard kodirana varijanta nosi manje bodova.</td>
+                <td>Napravljeno, čitaju se iz environment datoteke</td>
+            </tr>
+            <tr>
+                <td>11. Potrebno je doraditi dizajn stranice ako u prvoj zadaći niste vodili o tome previše računa. Dizajn
+                    treba prebaciti korištenjem Sass preprocesora u Sass ili Scss sintaksi. </td>
+                <td>Napravljeno, koristi se scss</td>
+            </tr>
+            <tr>
+                <td>12. Dodati reCaptcha v3 sustav na minimalno 3 obrazaca od kojih su obavezni: prijava, registracija i
+                    ažuriranje profila.</td>
+                <td>Napravljeno, siteKey i secretKey upišite u vlovric21_conf.csv datoteku na njihovo mjesto</td>
+            </tr>
+            <tr>
+                <td>13. Potrebno je doraditi ažuriranje profila sa opcijom da se uključi dvorazinska autentifikacija.
+                    Prilikom prvog uključivanja dvorazinske autentifikacije potrebno je kreirati tajni ključ koji se
+                    sprema u bazu i prikazuje korisniku utekstualnom obliku ili u obliku <span>QR koda (za dodatne
+                    bodove)</span>. Korisnik može isključiti dvorazinsku autentifikaciju ili ponovo uključiti, ali više nema
+                    prikaza tajnog ključa.</td>
+                <td>Napravljeno, prikazuje se tekstualan oblik pri prvoj aktivaciji.</td>
+            </tr>
+            <tr>
+                <td>14. Potrebno je doraditi prijavu da se autentifikacija radi u dvije razine. Prvo korisničko ime i lozinka
+                    te nakon toga TOTP ako je uključena dvorazinska autentifikacija za tog korisnika.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>15. Potrebno je doraditit prijavu da omogućuje mogućnost prijave sa oAuth putem GitHub računa.
+                    Takav korisnik nema TOTP</td>
+                <td>Napravljeno, ključeve za clientID i clientSecrets upišite u vlovric21_conf.csv datoteci na njihovo mjesto</td>
+            </tr>
+            <tr>
+                <td>16. Korisnik koji se prijavi preki GitHub računa ne radi ništa s bazom podatka. Kod takvog korisnika
+                    spremanje favorita se radi u preglednikov local storage. Jednako tako pregled favorita i
+                    favoritDetalji se čitaju iz local storage u pregledniku. Stranica profila nije dostupna.</td>
+                <td>Napravljeno da stranica profila nije dostupna, spremanje favorita ne postoji</td>
+            </tr>
+            <tr>
+                <td>17. Inicijalno mora postojati korisnik iz svake uloge koji nema TOTP i treba navesti podatke na
+                    stranici prijava radi lakšeg testiranja.</td>
+                <td>Napravljeno, navedeno na prijavi</td>
+            </tr>
+            <tr>
+                <td>18. <span>Za dodatne bodove može se prebaciti cijeli pozadinski dio u TypeScript. Kod pokretanja sa npm
+                    start obavezno se mora napraviti recompile TypeScript-a i kopiranje svih bitnih statičnih sadržaja
+                    da aplikacija normalno radi.</span></td>
+                <td id="opcionalno"></td>
+            </tr>
+        </tbody>
+    </table>
+</main>

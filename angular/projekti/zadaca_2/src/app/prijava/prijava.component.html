@@ -1,0 +1,15 @@
+<main>
+    <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)">
+        <label for="korime">Korisničko ime</label>
+        <input name="korime" type="text" ngModel>
+        <label for="lozinka">Lozinka</label>
+        <input name="lozinka" type="password" ngModel>
+        <input type="submit" value="Šalji">
+
+        <p *ngIf="errorMessage" id="poruka">{{ errorMessage }}</p>
+    </form>
+<h3>Admin korisničko ime: admin, lozinka: rwa</h3>
+<h3>Korisnik korisničko ime: obican, lozinka: rwa</h3>
+<h3>Gost korisničko ime: gost, lozinka: rwa</h3>
+<h3>Svi ostali korisnici imaju lozinku: rwa</h3>
+</main>

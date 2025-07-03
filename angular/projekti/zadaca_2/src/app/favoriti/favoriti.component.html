@@ -1,0 +1,43 @@
+<main>
+  <table id="favoritiTable">
+    <thead>
+      <tr>
+        <th>Naziv Serije</th>
+        <th>Opis</th>
+        <th>Broj Sezona</th>
+        <th>Broj Epizoda</th>
+        <th>Popularnost</th>
+      </tr>
+    </thead>
+    <tbody id="favoritiBody">
+      <tr *ngFor="let serija of favoritiData" (click)="showDetails(serija)">
+        <td>{{ serija.naziv }}</td>
+        <td>{{ serija.opis }}</td>
+        <td>{{ serija.broj_sezona }}</td>
+        <td>{{ serija.broj_epizoda }}</td>
+        <td>{{ serija.popularnost }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <br /><br /><br /><br />
+
+  <table id="favoritiDetalji">
+    <thead>
+      <tr>
+        <th>Naziv</th>
+        <th>Opis</th>
+        <th>Slika</th>
+        <th>Broj Sezone</th>
+      </tr>
+    </thead>
+    <tbody id="favoritiDetaljiBody">
+      <tr *ngFor="let sezona of favoritiDetails">
+        <td>{{ sezona.naziv }}</td>
+        <td>{{ sezona.opis }}</td>
+        <td>{{ sezona.slika }}</td>
+        <td>{{ sezona.broj_sezone }}</td>
+      </tr>
+    </tbody>
+  </table>
+  
+</main>

@@ -1,0 +1,10 @@
+<a routerLink="/" class="gumb">Početna</a>
+<a routerLink="/profil" class="gumb" *ngIf="!githubLogin">Profil</a>
+<a routerLink="/favoriti" class="gumb">Favoriti</a>
+<a routerLink="/korisnici" class="gumb">Korisnici</a>
+<a routerLink="/dokumentacija" class="gumb">Dokumentacija</a>
+<a routerLink="/registracija" class="gumb razmak">Registracija</a>
+<a routerLink="/prijava" class="gumb" *ngIf="korime === 'Morate se prijaviti!'">Prijava</a>
+<a (click)="initiateGithubLogin()" class="gumb" *ngIf="korime === 'Morate se prijaviti!'">Prijava github</a>
+<a (click)="logout()" class="gumb" *ngIf="korime !== 'Morate se prijaviti!'">Odjava</a>
+<a id="ime">{{ korime ? korime : 'Morate se prijaviti!' }}</a>
